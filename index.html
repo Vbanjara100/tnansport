@@ -1,0 +1,877 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport Department</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #0055a5;
+    }
+    nav button {
+      background: #0073e6;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    nav button:hover {
+      background: #004080;
+    }
+    section {
+      display: none;
+      padding: 20px;
+    }
+    section.active {
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background: #0073e6;
+      color: white;
+    }
+    .call-btn {
+      background: #28a745;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .call-btn:hover {
+      background: #1e7e34;
+    }
+    details {
+      text-align: left;
+      padding: 5px;
+      font-size: 14px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #004080;
+    }
+    details ul {
+      margin: 5px 0 0 15px;
+      padding: 0;
+    }
+    details ul li {
+      list-style: disc;
+      margin: 2px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Transport Department - Bajaj Auto </h1>
+</header>
+
+<nav>
+  <button onclick="showSection('s1')">Sunday 1 Shift</button>
+  <button onclick="showSection('s2')">Sunday 2 Shift</button>
+  <button onclick="showSection('s3')">Sunday 3 Shift</button>
+  <button onclick="showSection('n1')">Next Week 1st Shift</button>
+  <button onclick="showSection('n2')">Next Week 2nd Shift</button>
+  <button onclick="showSection('ot')">OT</button>
+  <button onclick="showSection('vv')">Vendor Visit</button>
+</nav>
+
+<!-- Sunday 1 Shift -->
+<section id="s1" class="active">
+  <h2>Sunday 1 Shift</h2>
+  <table>
+    <tr>
+      <th>Sr No</th>
+      <th>Route Name / Bus Stops</th>
+      <th>Driver Name</th>
+      <th>Driver Call</th>
+      <th>Supervisor Name</th>
+      <th>Supervisor Call</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>
+        <details>
+          <summary>Main Route: KATRAJ</summary>
+          <ul>
+          
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+            <li>Bus Stop location</li>
+          </ul>
+        </details>
+      </td>
+      <td>Ramesh</td>
+      <td><a href="tel:+919999999999" class="call-btn">Call</a></td>
+      <td>Suresh</td>
+      <td><a href="tel:+918888888888" class="call-btn">Call</a></td>
+    </tr>
+
+  </table>
+</section>
+
+<!-- Sunday 2 Shift -->
+<section id="s2">
+  <h2>Sunday 2 Shift</h2>
+  <table>
+    <tr>
+      <th>Sr No</th>
+      <th>Route Name / Bus Stops</th>
+      <th>Driver Name</th>
+      <th>Driver Call</th>
+      <th>Supervisor Name</th>
+      <th>Supervisor Call</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+        <details>
+          <summary>Main Route: Plant to Town</summary>
+          <ul>
+            <li>Plant Gate</li>
+            <li>Town Stop X</li>
+            <li>Town Stop Y</li>
+            <li>Town Stop Z</li>
+          </ul>
+        </details>
+      </td>
+      <td>Mahesh</td>
+      <td><a href="tel:+917777777777" class="call-btn">Call</a></td>
+      <td>Ravi</td>
+      <td><a href="tel:+916666666666" class="call-btn">Call</a></td>
+    </tr>
+  </table>
+</section>
+
+<!-- Sunday 3 Shift -->
+<section id="s3">
+  <h2>Sunday 3 Shift</h2>
+  <table>
+    <tr>
+      <th>Sr No</th>
+      <th>Route Name / Bus Stops</th>
+      <th>Driver Name</th>
+      <th>Driver Call</th>
+      <th>Supervisor Name</th>
+      <th>Supervisor Call</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+        <details>
+          <summary>Main Route: Plant to North City</summary>
+          <ul>
+            <li>Plant Gate</li>
+            <li>North Stop 1</li>
+            <li>North Stop 2</li>
+            <li>North Stop 3</li>
+          </ul>
+        </details>
+      </td>
+      <td>Sunil</td>
+      <td><a href="tel:+915555555555" class="call-btn">Call</a></td>
+      <td>Vikas</td>
+      <td><a href="tel:+914444444444" class="call-btn">Call</a></td>
+    </tr>
+  </table>
+</section>
+
+<!-- Next Week 1st Shift -->
+<section id="n1">
+  <h2>Next Week First Shift</h2>
+  <table>
+    <tr>
+      <th>Sr No</th>
+      <th>Route Name / Bus Stops</th>
+      <th>Driver Name</th>
+      <th>Driver Call</th>
+      <th>Supervisor Name</th>
+      <th>Supervisor Call</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+        <details>
+          <summary>Main Route: Plant to East Side</summary>
+          <ul>
+            <li>Plant Gate</li>
+            <li>East Stop A</li>
+            <li>East Stop B</li>
+            <li>East Stop C</li>
+          </ul>
+        </details>
+      </td>
+      <td>Amit</td>
+      <td><a href="tel:+913333333333" class="call-btn">Call</a></td>
+      <td>Kiran</td>
+      <td><a href="tel:+912222222222" class="call-btn">Call</a></td>
+    </tr>
+  </table>
+</section>
+
+<!-- Next Week 2nd Shift -->
+<section id="n2">
+  <h2>Next Week Second Shift</h2>
+  <table>
+    <tr>
+      <th>Sr No</th>
+      <th>Route Name / Bus Stops</th>
+      <th>Driver Name</th>
+      <th>Driver Call</th>
+      <th>Supervisor Name</th>
+      <th>Supervisor Call</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+        <details>
+          <summary>Main Route: Plant to South City</summary>
+          <ul>
+            <li>Plant Gate</li>
+            <li>South Stop 1</li>
+            <li>South Stop 2</li>
+            <li>South Stop 3</li>
+          </ul>
+        </details>
+      </td>
+      <td>Rajesh</td>
+      <td><a href="tel:+911111111111" class="call-btn">Call</a></td>
+      <td>Santosh</td>
+      <td><a href="tel:+910000000000" class="call-btn">Call</a></td>
+    </tr>
+  </table>
+</section>
+
+<!-- OT -->
+<section id="ot">
+  <h2>OT (Overtime)</h2>
+  <table>
+    <tr>
+      <th>Sr No</th>
+      <th>Route Name / Bus Stops</th>
+      <th>Driver Name</th>
+      <th>Driver Call</th>
+      <th>Supervisor Name</th>
+      <th>Supervisor Call</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+        <details>
+          <summary>Main Route: Plant to Special OT Route</summary>
+          <ul>
+            <li>Plant Gate</li>
+            <li>OT Stop A</li>
+            <li>OT Stop B</li>
+          </ul>
+        </details>
+      </td>
+      <td>Deepak</td>
+      <td><a href="tel:+919898989898" class="call-btn">Call</a></td>
+      <td>Anil</td>
+      <td><a href="tel:+919797979797" class="call-btn">Call</a></td>
+    </tr>
+  </table>
+</section>
+
+<!-- Vendor Visit -->
+<section id="vv">
+  <h2>Vendor Visit</h2>
+  <table>
+    <tr>
+      <th>Sr No</th>
+      <th>Route Name / Bus Stops</th>
+      <th>Driver Name</th>
+      <th>Driver Call</th>
+      <th>Supervisor Name</th>
+      <th>Supervisor Call</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+        <details>
+          <summary>Main Route: Plant to Vendor Location</summary>
+          <ul>
+            <li>Plant Gate</li>
+            <li>Vendor Stop 1</li>
+            <li>Vendor Stop 2</li>
+          </ul>
+        </details>
+      </td>
+      <td>Prakash</td>
+      <td><a href="tel:+919595959595" class="call-btn">Call</a></td>
+      <td>Ajay</td>
+      <td><a href="tel:+919494949494" class="call-btn">Call</a></td>
+    </tr>
+  </table>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
+```
